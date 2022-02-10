@@ -1,5 +1,15 @@
+:root {
+    --background-color: #f7f7f7;
+    --header-color: #000;
+    --font-color: #000;
+    --accent-color: #7da2a9;
+    --accent-offset-color: white;
+}
+
 body, html {
     font-size: 18px !important;
+    background-color: var(--background-color);
+    color: var(--font-color) !important;
 }
 
 #main {
@@ -28,4 +38,13 @@ input[type=checkbox] {
 	width: 20px !important;
 	height: 20px !important;
 	margin-right: 5px;
+}
+
+h1, h2, h3 {
+    color: var(--header-color) !important;
+}
+
+button {
+    background-color: var(--accent-color) !important;
+    color: var(--accent-offset-color) !important;
 }

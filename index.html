@@ -37,6 +37,7 @@
         <!-- Form Elements -->
         <div class="ui twelve wide column" id="context">
             <form class="ui form">
+				<!-- VMs -->
                 <h1 class="ui dividing header">VMs</h1>
                 <fieldset id="vm-set">
                     <div class="ui grid">
@@ -50,10 +51,13 @@
                         </div>
                         
                         <div class="ui five wide column">
+							<input type="checkbox" class="add-content" value="FAFSA received" data-category="vm"> FAFSA received<br>
+							<input type="checkbox" class="add-content" value="MPN/EC received" data-category="vm"> MPN/EC received<br>
                             <input type="checkbox" class="add-content" value="bill posted" data-category="vm"> bill posted<br>
                             <input type="checkbox" class="add-content" value="Award Letter posted" data-category="vm"> Award Letter posted<br>
                             <input type="checkbox" class="add-content" value="FA posted" data-category="vm"> FA posted<br>
                             <input type="checkbox" class="add-content" value="Tuition Assistance posted" data-category="vm"> Tuition Assistance posted<br>
+							<input type="checkbox" class="add-content" value="Verification cleared" data-category="vm"> Verification cleared<br>
                         </div>
                         
                         <div class="ui six wide column">
@@ -69,72 +73,118 @@
                     </div>
                 </fieldset>
                 
+				<!-- V2V -->
                 <h1 class="ui dividing header">V2V</h1>
                 <fieldset id="v2v-set">
-                    <input type="checkbox" class="add-content" value="intro" data-category="v2v"> intro<br>
-                    <input type="checkbox" class="add-content" value="role explained" data-category="v2v"> role explained<br>
-                    <input type="checkbox" class="add-content" value="advised next steps" data-category="v2v"> advised next steps<br>
-                    <input type="checkbox" class="add-content" value="reviewed information" data-category="v2v"> reviewed information<br>
-                    <input type="checkbox" class="add-content" value="student had questions" data-category="v2v"> student had questions<br>
-                    <input type="checkbox" class="add-content" value="bill posted" data-category="v2v"> bill posted<br>
-                    <input type="checkbox" class="add-content" value="Award Letter posted" data-category="v2v"> Award Letter posted<br>
-                    <input type="checkbox" class="add-content" value="FA posted" data-category="v2v"> FA posted<br>
-                    <input type="checkbox" class="add-content" value="Tuition Assistance posted" data-category="v2v"> Tuition Assistance posted<br>
-                    <input type="checkbox" class="add-content" value="student has remaining balance" data-category="v2v"> student has remaining balance<br>
-                    <input type="checkbox" class="add-content" value="student is FPC" data-category="v2v"> student is FPC
+                    <div class="ui grid">
+                        <div class="ui five wide column">
+                            <input type="checkbox" class="add-content" value="intro" data-category="v2v"> intro<br>
+                            <input type="checkbox" class="add-content" value="role explained" data-category="v2v"> role explained<br>
+                            <input type="checkbox" class="add-content" value="scheduled appointment" data-category="v2v"> scheduled appointment<br>
+                            <input type="checkbox" class="add-content" value="advised next steps" data-category="v2v"> advised next steps<br>
+                            <input type="checkbox" class="add-content" value="reviewed information" data-category="v2v"> reviewed information<br>
+                            <input type="checkbox" class="add-content" value="student had questions" data-category="v2v"> student had questions<br>
+						</div>
+						
+						<div class="ui five wide column">
+                            <input type="checkbox" class="add-content" value="FAFSA received" data-category="v2v"> FAFSA received<br>
+                            <input type="checkbox" class="add-content" value="MPN/EC received" data-category="v2v"> MPN/EC received<br>
+                            <input type="checkbox" class="add-content" value="bill posted" data-category="v2v"> bill posted<br>
+                            <input type="checkbox" class="add-content" value="Award Letter posted" data-category="v2v"> Award Letter posted<br>
+                            <input type="checkbox" class="add-content" value="FA posted" data-category="v2v"> FA posted<br>
+                            <input type="checkbox" class="add-content" value="Tuition Assistance posted" data-category="v2v"> Tuition Assistance posted<br>
+						</div>
+						
+						<div class="ui six wide column">
+                            <input type="checkbox" class="add-content" value="student has remaining balance" data-category="v2v"> student has remaining balance<br>
+                            <input type="checkbox" class="add-content" value="student is FPC " data-category="v2v"> student is FPC <br>
+						</div>
+					</div>
                 </fieldset>
                 
+				<!-- Financial Plan -->
                 <h1 class="ui dividing header">Financial Plan</h1>
                 <fieldset id="fp-set">
-                    <input type="checkbox" class="add-content" value="FA" data-category="fp"> FA<br>
-                    <input type="checkbox" class="add-content" value="Employee Tuition Assistance" data-category="fp"> Employee Tuition Assistance<br>
-                    <input type="checkbox" class="add-content" value="Military Benefits" data-category="fp"> Military Benefits<br>
-                    <input type="checkbox" class="add-content" value="Payment Plan" data-category="fp"> Payment Plan<br>
-                    <input type="checkbox" class="add-content" value="OOP" data-category="fp"> OOP<br>
-                    <input type="checkbox" class="add-content" value="3rd Party" data-category="fp"> 3rd Party<br>
-                    <input type="checkbox" class="add-content" value="TR (backend)" data-category="fp"> TR (backend)
+                    <div class="ui grid">
+                        <div class="ui six wide column">
+                            <input type="checkbox" class="add-content" value="FA" data-category="fp"> FA<br>
+                            <input type="checkbox" class="add-content" value="Employee Tuition Assistance" data-category="fp"> Employee Tuition Assistance<br>
+                            <input type="checkbox" class="add-content" value="Military Benefits" data-category="fp"> Military Benefits<br>
+                            <input type="checkbox" class="add-content" value="Payment Plan" data-category="fp"> Payment Plan<br>
+                        </div>
+                        
+                        <div class="ui six wide column">
+                            <input type="checkbox" class="add-content" value="OOP" data-category="fp"> OOP<br>
+                            <input type="checkbox" class="add-content" value="3rd Party" data-category="fp"> 3rd Party<br>
+                            <input type="checkbox" class="add-content" value="Tuition Reimbursement" data-category="fp"> Tuition Reimbursement<br>
+                            <input type="checkbox" class="add-content" value="Private Loans " data-category="fp"> Private Loans <br>
+                        </div>
+                    </div>
                 </fieldset>
                 
+				<!-- Information -->
                 <h1 class="ui dividing header">Information</h1>
                 <fieldset id="review-set">
-                    <input type="checkbox" class="add-content" value="program costs" data-category="review"> program costs<br>
-                    <input type="checkbox" class="add-content" value="tuition deadlines" data-category="review"> tuition deadlines<br>
-                    <input type="checkbox" class="add-content" value="FA process & timeline" data-category="review"> FA process & timeline<br>
-                    <input type="checkbox" class="add-content" value="FA awarding" data-category="review"> FA awarding<br>
-                    <input type="checkbox" class="add-content" value="accepting aid" data-category="review"> accepting aid<br>
-                    <input type="checkbox" class="add-content" value="Employee Assistance process & timeline" data-category="review"> Employee Assistance process & timeline<br>
-                    <input type="checkbox" class="add-content" value="TR (backend) process" data-category="review"> TR (backend) process<br>
-                    <input type="checkbox" class="add-content" value="3rd Party process & timeline" data-category="review"> 3rd Party process & timeline<br>
-                    <input type="checkbox" class="add-content" value="Payment Plan" data-category="review"> Payment Plan<br>
-                    <input type="checkbox" class="add-content" value="Summer Aid" data-category="review"> Summer Aid<br>
-                    <input type="checkbox" class="add-content" value="Loans/Responsible borrowing" data-category="review"> Loans/Responsible borrowing<br>
-                    <input type="checkbox" class="add-content" value="Private Loans" data-category="review"> Private Loans<br>
-                    <input type="checkbox" class="add-content" value="Military Benefits" data-category="review"> Military Benefits<br>
-                    <input type="checkbox" class="add-content" value="textbooks" data-category="review"> textbooks<br>
-                    <input type="checkbox" class="add-content" value="semester/term start dates" data-category="review"> semester/term start dates<br>
-                    <input type="checkbox" class="add-content" value="enrollment status" data-category="review"> enrollment status<br>
-                    <input type="checkbox" class="add-content" value="updating/correcting FAFSA" data-category="review"> updating/correcting FAFSA<br>
-                    <input type="checkbox" class="add-content" value="student balance" data-category="review"> student balance
+                    <div class="ui grid">
+                        <div class="ui five wide column">
+                            <input type="checkbox" class="add-content" value="program costs" data-category="review"> program costs<br>
+                            <input type="checkbox" class="add-content" value="tuition deadlines" data-category="review"> tuition deadlines<br>
+                            <input type="checkbox" class="add-content" value="semester/term start dates" data-category="review"> semester/term start dates<br>
+                            <input type="checkbox" class="add-content" value="enrollment status" data-category="review"> enrollment status<br>
+                            <input type="checkbox" class="add-content" value="student balance" data-category="review"> student balance<br>
+                            <input type="checkbox" class="add-content" value="textbooks" data-category="review"> textbooks<br>
+                        </div>
+                        
+                        <div class="ui five wide column">
+                            <input type="checkbox" class="add-content" value="FA process & timeline" data-category="review"> FA process & timeline<br>
+                            <input type="checkbox" class="add-content" value="FA awarding" data-category="review"> FA awarding<br>
+                            <input type="checkbox" class="add-content" value="accepting aid" data-category="review"> accepting aid<br>
+                            <input type="checkbox" class="add-content" value="Summer Aid" data-category="review"> Summer Aid<br>
+                            <input type="checkbox" class="add-content" value="Loans/Responsible borrowing" data-category="review"> Loans/Responsible borrowing<br>
+                            <input type="checkbox" class="add-content" value="Private Loans" data-category="review"> Private Loans<br>
+                            <input type="checkbox" class="add-content" value="updating/correcting FAFSA" data-category="review"> updating/correcting FAFSA<br>
+                        </div>
+                        
+                        <div class="ui six wide column">
+                            <input type="checkbox" class="add-content" value="Employee TA process & timeline" data-category="review"> Employee TA process & timeline<br>
+                            <input type="checkbox" class="add-content" value="TR (backend) process" data-category="review"> TR (backend) process<br>
+                            <input type="checkbox" class="add-content" value="3rd Party process & timeline" data-category="review"> 3rd Party process & timeline<br>
+                            <input type="checkbox" class="add-content" value="Payment Plan" data-category="review"> Payment Plan<br>
+                            <input type="checkbox" class="add-content" value="Military Benefits" data-category="review"> Military Benefits<br>
+                        </div>
+                    </div>
                 </fieldset>
                 
+				<!-- Next Step -->
                 <h1 class="ui dividing header">Next Step</h1>
                 <fieldset id="step-set">
-                    <input type="checkbox" class="add-content" value="FAFSA Needed" data-category="step"> FAFSA Needed<br>
-                    <input type="checkbox" class="add-content" value="Award Decision Needed" data-category="step"> Award Decision Needed<br>
-                    <input type="checkbox" class="add-content" value="MPN/EC Needed" data-category="step"> MPN/EC Needed<br>
-                    <input type="checkbox" class="add-content" value="FA Docs Needed" data-category="step"> FA Docs Needed<br>
-                    <input type="checkbox" class="add-content" value="Make Payment" data-category="step"> Make Payment<br>
-                    <input type="checkbox" class="add-content" value="Waiting on ENR" data-category="step"> Waiting on ENR<br>
-                    <input type="checkbox" class="add-content" value="Tuition Waiver for Employee Needed" data-category="step"> Tuition Waiver for Employee Needed<br>
-                    <input type="checkbox" class="add-content" value="TR Docs Needed" data-category="step"> TR Docs Needed<br>
-                    <input type="checkbox" class="add-content" value="Summer Aid Application" data-category="step"> Summer Aid Application<br>
-                    <input type="checkbox" class="add-content" value="Military Reqs" data-category="step"> Military Reqs<br>
-                    <input type="checkbox" class="add-content" value="Pending FA Package" data-category="step"> Pending FA Package<br>
-                    <input type="checkbox" class="add-content" value="SAP Forms" data-category="step"> SAP Forms<br>
-                    <input type="checkbox" class="add-content" value="Setup Payment Plan" data-category="step"> Setup Payment Plan<br>
-                    <input type="checkbox" class="add-content" value="Update/Sign FAFSA" data-category="step"> Update/Sign FAFSA
+                    <div class="ui grid">
+                        <div class="ui five wide column">
+                            <input type="checkbox" class="add-content" value="FAFSA Needed" data-category="step"> FAFSA Needed<br>
+                            <input type="checkbox" class="add-content" value="FA Docs Needed" data-category="step"> FA Docs Needed<br>
+                            <input type="checkbox" class="add-content" value="SAP Forms" data-category="step"> SAP Forms<br>
+                            <input type="checkbox" class="add-content" value="Update/Sign FAFSA " data-category="step"> Update/Sign FAFSA <br>
+                        </div>
+                        
+                        <div class="ui five wide column">
+                            <input type="checkbox" class="add-content" value="Award Decision Needed" data-category="step"> Award Decision Needed<br>
+                            <input type="checkbox" class="add-content" value="MPN/EC Needed" data-category="step"> MPN/EC Needed<br>
+                            <input type="checkbox" class="add-content" value="TR Docs Needed" data-category="step"> TR Docs Needed<br>
+                            <input type="checkbox" class="add-content" value="Summer Aid Application" data-category="step"> Summer Aid Application<br>
+                            <input type="checkbox" class="add-content" value="Military Reqs" data-category="step"> Military Reqs<br>
+                            <input type="checkbox" class="add-content" value="Setup Payment Plan" data-category="step"> Setup Payment Plan<br>
+                        </div>
+                        
+                        <div class="ui six wide column">
+                            <input type="checkbox" class="add-content" value="Waiting on ENR" data-category="step"> Waiting on ENR<br>
+                            <input type="checkbox" class="add-content" value="Pending FA Package" data-category="step"> Pending FA Package<br>
+                            <input type="checkbox" class="add-content" value="Make Payment" data-category="step"> Make Payment<br>
+                            <input type="checkbox" class="add-content" value="Tuition Waiver for Employee Needed" data-category="step"> Tuition Waiver for Employee Needed<br>
+                        </div>
+                    </div>
                 </fieldset>
                 
+				<!-- Follow-Up -->
                 <h1 class="ui dividing header">Follow-Up</h1>
                 <fieldset id="follow-set">
                     <input type="checkbox" class="add-content" value="FAFSA is received" data-category="follow"> FAFSA is received<br>
@@ -144,17 +194,26 @@
                     <input type="checkbox" class="add-content" value="FPC Check-in" data-category="follow"> FPC Check-in
                 </fieldset>
                 
+				<!-- Email -->
                 <h1 class="ui dividing header">Post-Call Email</h1>
                 <fieldset id="email-set">
-                    <input type="checkbox" class="add-content" value="Intro" data-category="email"> Intro<br>
-                    <input type="checkbox" class="add-content" value="FAFSA Needed" data-category="email"> FAFSA Needed<br>
-                    <input type="checkbox" class="add-content" value="External Scholarships" data-category="email"> External Scholarships<br>
-                    <input type="checkbox" class="add-content" value="Textbooks" data-category="email"> Textbooks<br>
-                    <input type="checkbox" class="add-content" value="FA Resources" data-category="email"> FA Resources<br>
-                    <input type="checkbox" class="add-content" value="Military Info" data-category="email"> Military Info<br>
-                    <input type="checkbox" class="add-content" value="Payment Options" data-category="email"> Payment Options<br>
-                    <input type="checkbox" class="add-content" value="Verification" data-category="email"> Verification<br>
-                    <input type="checkbox" class="add-content" value="SAP" data-category="email"> SAP
+                    <div class="ui grid">
+                        <div class="ui six wide column">
+                            <input type="checkbox" class="add-content" value="Intro" data-category="email"> Intro<br>
+                            <input type="checkbox" class="add-content" value="FAFSA Needed" data-category="email"> FAFSA Needed<br>
+                            <input type="checkbox" class="add-content" value="External Scholarships" data-category="email"> External Scholarships<br>
+                            <input type="checkbox" class="add-content" value="FAFSA received" data-category="email"> FAFSA received<br>
+                            <input type="checkbox" class="add-content" value="Textbooks" data-category="email"> Textbooks<br>
+                        </div>
+                        
+                        <div class="ui six wide column">
+                            <input type="checkbox" class="add-content" value="FA Resources" data-category="email"> FA Resources<br>
+                            <input type="checkbox" class="add-content" value="Military Info" data-category="email"> Military Info<br>
+                            <input type="checkbox" class="add-content" value="Payment Options" data-category="email"> Payment Options<br>
+                            <input type="checkbox" class="add-content" value="Verification" data-category="email"> Verification<br>
+                            <input type="checkbox" class="add-content" value="SAP " data-category="email"> SAP <br>
+                        </div>
+                    </div>
                 </fieldset>
             </form>
         </div>    
