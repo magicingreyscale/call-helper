@@ -13,6 +13,7 @@ body, html {
 
 #box {
     text-align: left;
+	font-size: 14px;
 }
 
 .section {
@@ -21,4 +22,10 @@ body, html {
 
 fieldset {
     border: 0px !important;
+}
+
+input[type=checkbox] {
+	width: 20px !important;
+	height: 20px !important;
+	margin-right: 5px;
 }
