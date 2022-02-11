@@ -14,6 +14,14 @@ $(document).ready(function() {
     
     $('.ui.checkbox').checkbox();
     
+    $('#copy')
+        .popup({
+        popup : $('.custom.popup'),
+        on    : 'click',
+        position : 'bottom center'
+    })
+    ;
+    
     $(".add-content").change(function() {
         // Grab category from form element
         var cat = $(this).data("category");

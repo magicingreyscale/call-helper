@@ -48,3 +48,7 @@ button {
     background-color: var(--accent-color) !important;
     color: var(--accent-offset-color) !important;
 }
+
+.popup {
+    font-size: 12px !important;
+}
